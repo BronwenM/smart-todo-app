@@ -1,6 +1,6 @@
 .hero-header {
   width: 100%;
-  height: 50vh;
+  height: 90vh;
   position: relative;
   padding: 0 10%;
   margin-bottom: 16px;
@@ -13,17 +13,21 @@
     display: flex;
     justify-content: space-between;
 
-    .hero-text{
+    .hero-text {
       width: -webkit-fill-available;
       text-transform: capitalize;
+      font-size: 64px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      color: #3d3121;
     }
   }
 
 
   img {
-    max-width: 50%;
-    max-height: 100%;
-    height: auto;
+    // max-width: 50%;
+    // max-height: 100%;
+    height: 80%;
     object-fit: contain;
     position: absolute;
     right: 0;

@@ -15,6 +15,12 @@
   src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
 }
 
+@font-face {
+  font-family: 'Meow Script';
+  font-optical-sizing: auto;
+  src: url('../fonts/Meow_Script/MeowScript-Regular.ttf');
+}
+
 
 body {
   display: flex;
@@ -95,7 +101,7 @@ p, .paragraph {
   color: #383932;
 
   position: relative;
-  top: -50px;
+  margin-bottom: 8rem;
   p {
     margin-bottom: 0;
 
@@ -103,6 +109,10 @@ p, .paragraph {
 
   &:hover{
     text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 }
 

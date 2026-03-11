@@ -42,8 +42,9 @@ router.get('/:id', async(req, res) => {
   const singleTask = await getSingleTask(req.params.id, req.session.user_id);
   const user = await getUserById(req);
 
+  let headerTxt = singleTask.name ? singleTask.name : "Task Details";
 
-  const templateVars = {user, singleTask, headerText: singleTask.name};
+  const templateVars = {user, singleTask, headerText: headerTxt};
   res.render('task-display', templateVars);
 });
 
