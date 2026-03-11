@@ -12,7 +12,7 @@
   </head>
   <%- include('partials/_header') %>
   <body>
-    <%- include('partials/_hero-banner', {headerText: "To Do:<br>" + headerText}) %>
+    <%- include('partials/_hero-banner', {headerText: "To Do:<br>" + headerText, headerSize: 'small'}) %>
     <main>
       <span class="icon-tags">
         <div class="completed-tag"><%- singleTask.complete ? 'Completed' : 'In Progress' %></div>

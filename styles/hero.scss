@@ -1,6 +1,5 @@
 .hero-header {
   width: 100%;
-  height: 90vh;
   position: relative;
   padding: 0 10%;
   margin-bottom: 16px;
@@ -21,8 +20,16 @@
       font-family: 'Montserrat', sans-serif;
       color: #3d3121;
     }
+
   }
 
+  &.small {
+    height: 50vh;
+  }
+
+  &.large {
+    height: 90vh;
+  }
 
   img {
     // max-width: 50%;
@@ -34,4 +41,34 @@
     top: 0;
   }
 
+
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    align-items: flex-end;
+    margin-bottom: 5rem;
+
+    img {
+      max-height: 75%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .hero-content {
+      width: auto;
+      flex-direction: column-reverse;
+
+      .hero-text {
+        font-size: 48px;
+
+        &.spacer {
+          display: none;
+          visibility: hidden;
+          width: 0;
+        }
+      }
+
+    }
+  }
 }
