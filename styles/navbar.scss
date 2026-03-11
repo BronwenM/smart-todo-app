@@ -11,3 +11,21 @@ header {
     color: #484e35;
   }
 }
+
+.logout-btn {
+  background-color: #FAA96C;
+  color: #383932;
+  border-radius: 32px;
+  padding: 0.25rem 1.25rem;
+  margin: 0.5rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d27731;
+    color: #fff;
+  }
+  &:focus{
+    outline: none;
+  }
+}
